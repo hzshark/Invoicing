@@ -1,7 +1,8 @@
 package cn.hycen.Invoicing.util;
 
-import cn.bestsign.mobileshield.common.CommonConstants;
-import cn.bestsign.mobileshield.common.exception.BizException;
+import cn.hycen.Invoicing.common.Constants;
+import cn.hycen.Invoicing.exception.BizException;
+import cn.hycen.Invoicing.exception.BizExceptionCode;
 import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,7 +28,7 @@ public class JwtHelper {
     public static String verifyAccessTokenFromJWT(String jsonWebToken) throws BizException {
         try {
             Claims claims = Jwts.parser()
-                    .setSigningKey(DatatypeConverter.parseBase64Binary(CommonConstants.BESTSIGN_APPSECRET))
+                    .setSigningKey(DatatypeConverter.parseBase64Binary(Constants.BESTSIGN_APPSECRET))
                     .parseClaimsJws(jsonWebToken).getBody();
             if (claims != null){
                 String accessToken = (String)claims.get("access_token");
@@ -36,13 +37,13 @@ public class JwtHelper {
             }
         } catch (ExpiredJwtException e) {
             logger.error("verifyAccessTokenFromJWT expired  jwt={} error={}",jsonWebToken,e.getMessage());
-            throw new BizException(110002, "verifyAccessTokenFromJWT expired  jwt="+jsonWebToken+" error={"+e.getMessage()+"}");
+            throw new BizException(BizExceptionCode.CODE_110002, "verifyAccessTokenFromJWT expired  jwt="+jsonWebToken+" error={"+e.getMessage()+"}");
         } catch (UnsupportedJwtException | MalformedJwtException | IllegalArgumentException e) {
             logger.error("verifyAccessTokenFromJWT error  jwt={} error={}",jsonWebToken,e.getMessage());
-            throw new BizException(110005, "verifyAccessTokenFromJWT error jwt="+jsonWebToken+" error={"+e.getMessage()+"}");
+            throw new BizException(BizExceptionCode.CODE_110005, "verifyAccessTokenFromJWT error jwt="+jsonWebToken+" error={"+e.getMessage()+"}");
         } catch (SignatureException e) {
             logger.error("verifyAccessTokenFromJWT error  jwt={} error={}",jsonWebToken,e.getMessage());
-            throw new BizException(110007, "verifyAccessTokenFromJWT error jwt="+jsonWebToken+" error={"+e.getMessage()+"}");
+            throw new BizException(BizExceptionCode.CODE_110007, "verifyAccessTokenFromJWT error jwt="+jsonWebToken+" error={"+e.getMessage()+"}");
         }
         return null;
     }
@@ -64,7 +65,7 @@ public class JwtHelper {
         Date now = new Date(nowMillis);
 
         //生成签名密钥
-        byte[] apiKeySecretBytes = DatatypeConverter.parseBase64Binary(CommonConstants.BESTSIGN_APPSECRET);
+        byte[] apiKeySecretBytes = DatatypeConverter.parseBase64Binary(Constants.BESTSIGN_APPSECRET);
         Key signingKey = new SecretKeySpec(apiKeySecretBytes, signatureAlgorithm.getJcaName());
 
         //添加构成JWT的参数

@@ -1,4 +1,4 @@
-#admin <br />
+#templates.admin <br />
 基于Layui 2.*实现的一个后台管理模板<br />
 演示地址：http://kit.zhengjinfan.cn/<br />
 QQ交流群：248049395 <br />

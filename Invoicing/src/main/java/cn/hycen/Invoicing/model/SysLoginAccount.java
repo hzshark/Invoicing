@@ -1,6 +1,6 @@
 package cn.hycen.Invoicing.model;
 
-import cn.hycen.Invoicing.common.AdminEnums;
+import cn.hycen.Invoicing.common.Enums;
 
 import java.util.Date;
 
@@ -91,7 +91,7 @@ public class SysLoginAccount {
 
     public String getAccountTypeName() {
         if(accountType!=null){
-            return AdminEnums.LOGIN_ACCOUNT_TYPE.valueOf(accountType);
+            return Enums.LOGIN_ACCOUNT_TYPE.valueOf(accountType);
         }
         return "";
     }

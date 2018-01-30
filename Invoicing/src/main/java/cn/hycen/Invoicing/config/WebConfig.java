@@ -72,12 +72,12 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/templates/**").addResourceLocations("classpath:/templates/");
-        registry.addResourceHandler("/build/**").addResourceLocations("classpath:/admin/build/");
-        registry.addResourceHandler("/views/**").addResourceLocations("classpath:/admin/views/");
-        registry.addResourceHandler("/datas/**").addResourceLocations("classpath:/admin/datas/");
-        registry.addResourceHandler("/components/**").addResourceLocations("classpath:/admin/components/");
-        registry.addResourceHandler("/plugins/**").addResourceLocations("classpath:/admin/plugins/");
-        registry.addResourceHandler("/vscode/**").addResourceLocations("classpath:/admin/vscode/");
+        registry.addResourceHandler("/build/**").addResourceLocations("classpath:/templates/admin/build/");
+        registry.addResourceHandler("/views/**").addResourceLocations("classpath:/templates/admin/views/");
+        registry.addResourceHandler("/datas/**").addResourceLocations("classpath:/templates/admin/datas/");
+        registry.addResourceHandler("/components/**").addResourceLocations("classpath:/templates/admin/components/");
+        registry.addResourceHandler("/plugins/**").addResourceLocations("classpath:/templates/admin/plugins/");
+        registry.addResourceHandler("/vscode/**").addResourceLocations("classpath:/templates/admin/vscode/");
         super.addResourceHandlers(registry);
 
     }
@@ -85,7 +85,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Bean
     public InternalResourceViewResolver viewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/templates/admin/");
+        viewResolver.setPrefix("/templates/");
         viewResolver.setSuffix(".html");
         return viewResolver;
     }

@@ -1,6 +1,6 @@
 package cn.hycen.Invoicing.common;
 
-public class AdminEnums {
+public class Enums {
 	
 	/**
 	 * 功能菜单是否有效

@@ -1,6 +1,6 @@
 package cn.hycen.Invoicing.controller;
 
-import cn.hycen.Invoicing.common.AdminConstants;
+import cn.hycen.Invoicing.common.Constants;
 import cn.hycen.Invoicing.exception.BizException;
 import cn.hycen.Invoicing.exception.BizExceptionCode;
 import cn.hycen.Invoicing.util.JwtHelper;
@@ -26,8 +26,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.Date;
 import java.util.List;
 
 @CrossOrigin(origins = "*")
@@ -35,13 +35,15 @@ public class BaseController {
 
     protected Logger logger = LoggerFactory.getLogger(getClass().getName());
 
+    @Resource
+    protected HttpSession session;
 
     @Resource
     protected HttpServletRequest request;
 
     public String getHeader(String name) throws BizException {
         String headerValue = StringUtils.trim(request.getHeader(name));
-        if(AdminConstants.TOKEN.equals(name)){
+        if(Constants.TOKEN.equals(name)){
             if(StringUtils.isNotEmpty(headerValue)){
                 headerValue = JwtHelper.verifyAccessTokenFromJWT(headerValue);
             }else{

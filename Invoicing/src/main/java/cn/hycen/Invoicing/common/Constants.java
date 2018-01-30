@@ -2,7 +2,7 @@ package cn.hycen.Invoicing.common;
 
 import java.io.File;
 
-public class AdminConstants {
+public class Constants {
 
     public static final String TOKEN = "access_token";
 
@@ -10,6 +10,7 @@ public class AdminConstants {
 
     public static final String STORAGE_LOCATION = "storage.location";
 
+    public static final String BESTSIGN_APPSECRET = "fi8YzULhEvfGdfJmN5iqStBrm2XH5xnHCH6R0uQe2LNvzlwVYjDCLdo5vt8R2G7W";
     /**
      * 短信验证码过期时间（单位秒）
      */
