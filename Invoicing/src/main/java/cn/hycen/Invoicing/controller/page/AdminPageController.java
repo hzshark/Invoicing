@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  *
  */
 @Controller
-@RequestMapping("/templates/admin")
+@RequestMapping("/admin")
 public class AdminPageController {
 
 

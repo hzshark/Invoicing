@@ -1861,3 +1861,225 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/temp
 [THYMELEAF]     * Prefix: "layout"
 [THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
 2018-01-30 19:30:26 |-INFO  30652 in org.thymeleaf.TemplateEngine[http-nio-8098-exec-2] : [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-01-30 19:34:18 |-INFO  30652 in org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext[Thread-9] : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dbf57b3: startup date [Tue Jan 30 19:30:19 CST 2018]; root of context hierarchy
+2018-01-30 19:34:18 |-INFO  30652 in org.springframework.context.support.DefaultLifecycleProcessor[Thread-9] : Stopping beans in phase 2147483647
+2018-01-30 19:34:18 |-INFO  30652 in org.springframework.jmx.export.annotation.AnnotationMBeanExporter[Thread-9] : Unregistering JMX-exposed beans on shutdown
+2018-01-30 19:34:22 |-INFO  31018 in cn.hycen.Invoicing.InvoicingApplication[main]      : Starting InvoicingApplication on hzshark with PID 31018 (/home/hshao/workspace/Invoicing/Invoicing/target/classes started by hshao in /home/hshao/workspace/Invoicing/Invoicing)
+2018-01-30 19:34:22 |-INFO  31018 in cn.hycen.Invoicing.InvoicingApplication[main]      : No active profile set, falling back to default profiles: default
+2018-01-30 19:34:23 |-INFO  31018 in org.hibernate.validator.internal.util.Version[background-preinit] : HV000001: Hibernate Validator 5.3.6.Final
+2018-01-30 19:34:23 |-INFO  31018 in org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext[main] : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123ef382: startup date [Tue Jan 30 19:34:23 CST 2018]; root of context hierarchy
+2018-01-30 19:34:23 |-INFO  31018 in org.springframework.beans.factory.xml.XmlBeanDefinitionReader[main] : Loading XML bean definitions from class path resource [mykaptcha.xml]
+2018-01-30 19:34:23 |-WARN  31018 in org.mybatis.spring.mapper.ClassPathMapperScanner[main] : No MyBatis mapper was found in '[cn.hycen.Invoicing]' package. Please check your configuration.
+2018-01-30 19:34:23 |-INFO  31018 in org.springframework.data.repository.config.RepositoryConfigurationDelegate[main] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-30 19:34:24 |-INFO  31018 in org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[main] : Tomcat initialized with port(s): 8098 (http)
+2018-01-30 19:34:24 |-INFO  31018 in org.apache.catalina.core.StandardService[main]     : Starting service [Tomcat]
+2018-01-30 19:34:24 |-INFO  31018 in org.apache.catalina.core.StandardEngine[main]      : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-30 19:34:24 |-INFO  31018 in org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][localhost-startStop-1] : Initializing Spring embedded WebApplicationContext
+2018-01-30 19:34:24 |-INFO  31018 in org.springframework.web.context.ContextLoader[localhost-startStop-1] : Root WebApplicationContext: initialization completed in 1738 ms
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'multipartFilter' to: [/*]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'encodingFilter' to urls: [/*]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'commonFilter' to urls: [/*]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.boot.web.servlet.ServletRegistrationBean[localhost-startStop-1] : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.Index()
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/index],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toIndex()
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/test],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toTest()
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toLoginPage()
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/main],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toMain()
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/table],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toTable()
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.PageController.Index()
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/vrifyCode],methods=[GET]}" onto public void cn.hycen.Invoicing.controller.page.PageController.defaultKaptcha(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/login],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.PageController.toLoginPage()
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/templates/admin/login],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject cn.hycen.Invoicing.controller.user.AccountController.Login()
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/templates/admin/logout],methods=[GET]}" onto public void cn.hycen.Invoicing.controller.user.AccountController.loginOut()
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/500] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/404] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/build/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/views/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/datas/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/components/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/plugins/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/vscode/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[main] : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123ef382: startup date [Tue Jan 30 19:34:23 CST 2018]; root of context hierarchy
+2018-01-30 19:34:25 |-INFO  31018 in org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[main] : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-01-30 19:34:26 |-INFO  31018 in org.springframework.jmx.export.annotation.AnnotationMBeanExporter[main] : Registering beans for JMX exposure on startup
+2018-01-30 19:34:26 |-INFO  31018 in org.springframework.context.support.DefaultLifecycleProcessor[main] : Starting beans in phase 2147483647
+2018-01-30 19:34:26 |-INFO  31018 in org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[main] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-30 19:34:26 |-INFO  31018 in org.apache.coyote.http11.Http11NioProtocol[main]   : Initializing ProtocolHandler ["http-nio-8098"]
+2018-01-30 19:34:26 |-INFO  31018 in org.apache.coyote.http11.Http11NioProtocol[main]   : Starting ProtocolHandler ["http-nio-8098"]
+2018-01-30 19:34:26 |-INFO  31018 in org.apache.tomcat.util.net.NioSelectorPool[main]   : Using a shared selector for servlet write/read
+2018-01-30 19:34:26 |-INFO  31018 in org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[main] : Tomcat started on port(s): 8098 (http)
+2018-01-30 19:34:26 |-INFO  31018 in cn.hycen.Invoicing.InvoicingApplication[main]      : Started InvoicingApplication in 3.563 seconds (JVM running for 4.174)
+2018-01-30 19:34:41 |-INFO  31018 in org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][http-nio-8098-exec-1] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-30 19:34:41 |-INFO  31018 in org.springframework.web.servlet.DispatcherServlet[http-nio-8098-exec-1] : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-30 19:34:41 |-INFO  31018 in org.springframework.web.servlet.DispatcherServlet[http-nio-8098-exec-1] : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2018-01-30 19:36:49 |-INFO  31018 in org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext[Thread-10] : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123ef382: startup date [Tue Jan 30 19:34:23 CST 2018]; root of context hierarchy
+2018-01-30 19:36:49 |-INFO  31018 in org.springframework.context.support.DefaultLifecycleProcessor[Thread-10] : Stopping beans in phase 2147483647
+2018-01-30 19:36:49 |-INFO  31018 in org.springframework.jmx.export.annotation.AnnotationMBeanExporter[Thread-10] : Unregistering JMX-exposed beans on shutdown
+2018-01-30 19:36:51 |-INFO  31199 in cn.hycen.Invoicing.InvoicingApplication[main]      : Starting InvoicingApplication on hzshark with PID 31199 (/home/hshao/workspace/Invoicing/Invoicing/target/classes started by hshao in /home/hshao/workspace/Invoicing/Invoicing)
+2018-01-30 19:36:51 |-INFO  31199 in cn.hycen.Invoicing.InvoicingApplication[main]      : No active profile set, falling back to default profiles: default
+2018-01-30 19:36:51 |-INFO  31199 in org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext[main] : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123ef382: startup date [Tue Jan 30 19:36:51 CST 2018]; root of context hierarchy
+2018-01-30 19:36:51 |-INFO  31199 in org.hibernate.validator.internal.util.Version[background-preinit] : HV000001: Hibernate Validator 5.3.6.Final
+2018-01-30 19:36:52 |-INFO  31199 in org.springframework.beans.factory.xml.XmlBeanDefinitionReader[main] : Loading XML bean definitions from class path resource [mykaptcha.xml]
+2018-01-30 19:36:52 |-WARN  31199 in org.mybatis.spring.mapper.ClassPathMapperScanner[main] : No MyBatis mapper was found in '[cn.hycen.Invoicing]' package. Please check your configuration.
+2018-01-30 19:36:52 |-INFO  31199 in org.springframework.data.repository.config.RepositoryConfigurationDelegate[main] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-30 19:36:52 |-INFO  31199 in org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[main] : Tomcat initialized with port(s): 8098 (http)
+2018-01-30 19:36:52 |-INFO  31199 in org.apache.catalina.core.StandardService[main]     : Starting service [Tomcat]
+2018-01-30 19:36:52 |-INFO  31199 in org.apache.catalina.core.StandardEngine[main]      : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-30 19:36:52 |-INFO  31199 in org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][localhost-startStop-1] : Initializing Spring embedded WebApplicationContext
+2018-01-30 19:36:52 |-INFO  31199 in org.springframework.web.context.ContextLoader[localhost-startStop-1] : Root WebApplicationContext: initialization completed in 1171 ms
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'multipartFilter' to: [/*]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'encodingFilter' to urls: [/*]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'commonFilter' to urls: [/*]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.boot.web.servlet.ServletRegistrationBean[localhost-startStop-1] : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.Index()
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/index],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toIndex()
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/test],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toTest()
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toLoginPage()
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/main],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toMain()
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/table],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toTable()
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.PageController.Index()
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/vrifyCode],methods=[GET]}" onto public void cn.hycen.Invoicing.controller.page.PageController.defaultKaptcha(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/login],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.PageController.toLoginPage()
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/templates/admin/login],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject cn.hycen.Invoicing.controller.user.AccountController.Login()
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/templates/admin/logout],methods=[GET]}" onto public void cn.hycen.Invoicing.controller.user.AccountController.loginOut()
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/500] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/404] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/build/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/views/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/datas/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/components/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/plugins/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/vscode/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[main] : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123ef382: startup date [Tue Jan 30 19:36:51 CST 2018]; root of context hierarchy
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[main] : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.jmx.export.annotation.AnnotationMBeanExporter[main] : Registering beans for JMX exposure on startup
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.context.support.DefaultLifecycleProcessor[main] : Starting beans in phase 2147483647
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[main] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-30 19:36:53 |-INFO  31199 in org.apache.coyote.http11.Http11NioProtocol[main]   : Initializing ProtocolHandler ["http-nio-8098"]
+2018-01-30 19:36:53 |-INFO  31199 in org.apache.coyote.http11.Http11NioProtocol[main]   : Starting ProtocolHandler ["http-nio-8098"]
+2018-01-30 19:36:53 |-INFO  31199 in org.apache.tomcat.util.net.NioSelectorPool[main]   : Using a shared selector for servlet write/read
+2018-01-30 19:36:53 |-INFO  31199 in org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[main] : Tomcat started on port(s): 8098 (http)
+2018-01-30 19:36:53 |-INFO  31199 in cn.hycen.Invoicing.InvoicingApplication[main]      : Started InvoicingApplication in 2.546 seconds (JVM running for 3.344)
+2018-01-30 19:37:16 |-INFO  31199 in org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][http-nio-8098-exec-1] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-30 19:37:16 |-INFO  31199 in org.springframework.web.servlet.DispatcherServlet[http-nio-8098-exec-1] : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-30 19:37:16 |-INFO  31199 in org.springframework.web.servlet.DispatcherServlet[http-nio-8098-exec-1] : FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2018-01-30 19:37:56 |-INFO  31199 in org.thymeleaf.TemplateEngine[http-nio-8098-exec-2] : [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-01-30 19:37:56 |-INFO  31199 in org.thymeleaf.templateresolver.AbstractTemplateResolver[http-nio-8098-exec-2] : [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-01-30 19:37:56 |-INFO  31199 in org.thymeleaf.templateresolver.AbstractTemplateResolver[http-nio-8098-exec-2] : [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-01-30 19:37:56 |-INFO  31199 in org.thymeleaf.messageresolver.AbstractMessageResolver[http-nio-8098-exec-2] : [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-01-30 19:37:56 |-INFO  31199 in org.thymeleaf.messageresolver.AbstractMessageResolver[http-nio-8098-exec-2] : [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-01-30 19:37:56 |-INFO  31199 in org.thymeleaf.TemplateEngine.CONFIG[http-nio-8098-exec-2] : [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-01-30 19:37:56 |-INFO  31199 in org.thymeleaf.TemplateEngine[http-nio-8098-exec-2] : [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-01-30 19:40:37 |-INFO  31199 in org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext[Thread-9] : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@123ef382: startup date [Tue Jan 30 19:36:51 CST 2018]; root of context hierarchy
+2018-01-30 19:40:37 |-INFO  31199 in org.springframework.context.support.DefaultLifecycleProcessor[Thread-9] : Stopping beans in phase 2147483647
+2018-01-30 19:40:37 |-INFO  31199 in org.springframework.jmx.export.annotation.AnnotationMBeanExporter[Thread-9] : Unregistering JMX-exposed beans on shutdown
+2018-01-30 19:40:40 |-INFO  31519 in cn.hycen.Invoicing.InvoicingApplication[main]      : Starting InvoicingApplication on hzshark with PID 31519 (/home/hshao/workspace/Invoicing/Invoicing/target/classes started by hshao in /home/hshao/workspace/Invoicing/Invoicing)
+2018-01-30 19:40:40 |-INFO  31519 in cn.hycen.Invoicing.InvoicingApplication[main]      : No active profile set, falling back to default profiles: default
+2018-01-30 19:40:40 |-INFO  31519 in org.hibernate.validator.internal.util.Version[background-preinit] : HV000001: Hibernate Validator 5.3.6.Final
+2018-01-30 19:40:40 |-INFO  31519 in org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext[main] : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dbf57b3: startup date [Tue Jan 30 19:40:40 CST 2018]; root of context hierarchy
+2018-01-30 19:40:40 |-INFO  31519 in org.springframework.beans.factory.xml.XmlBeanDefinitionReader[main] : Loading XML bean definitions from class path resource [mykaptcha.xml]
+2018-01-30 19:40:41 |-WARN  31519 in org.mybatis.spring.mapper.ClassPathMapperScanner[main] : No MyBatis mapper was found in '[cn.hycen.Invoicing]' package. Please check your configuration.
+2018-01-30 19:40:41 |-INFO  31519 in org.springframework.data.repository.config.RepositoryConfigurationDelegate[main] : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[main] : Tomcat initialized with port(s): 8098 (http)
+2018-01-30 19:40:42 |-INFO  31519 in org.apache.catalina.core.StandardService[main]     : Starting service [Tomcat]
+2018-01-30 19:40:42 |-INFO  31519 in org.apache.catalina.core.StandardEngine[main]      : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-30 19:40:42 |-INFO  31519 in org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][localhost-startStop-1] : Initializing Spring embedded WebApplicationContext
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.context.ContextLoader[localhost-startStop-1] : Root WebApplicationContext: initialization completed in 1757 ms
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'multipartFilter' to: [/*]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'encodingFilter' to urls: [/*]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.boot.web.servlet.FilterRegistrationBean[localhost-startStop-1] : Mapping filter: 'commonFilter' to urls: [/*]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.boot.web.servlet.ServletRegistrationBean[localhost-startStop-1] : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.Index()
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/index],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toIndex()
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/test],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toTest()
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/login],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toLoginPage()
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/main],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toMain()
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/admin/table],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.AdminPageController.toTable()
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.PageController.Index()
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/vrifyCode],methods=[GET]}" onto public void cn.hycen.Invoicing.controller.page.PageController.defaultKaptcha(javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/login],methods=[GET]}" onto public java.lang.String cn.hycen.Invoicing.controller.page.PageController.toLoginPage()
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/templates/admin/login],methods=[POST]}" onto public com.alibaba.fastjson.JSONObject cn.hycen.Invoicing.controller.user.AccountController.Login()
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/templates/admin/logout],methods=[GET]}" onto public void cn.hycen.Invoicing.controller.user.AccountController.loginOut()
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping[main] : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/500] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/404] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/build/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/views/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/datas/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/components/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/plugins/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/vscode/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.handler.SimpleUrlHandlerMapping[main] : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter[main] : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dbf57b3: startup date [Tue Jan 30 19:40:40 CST 2018]; root of context hierarchy
+2018-01-30 19:40:42 |-INFO  31519 in org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver[main] : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-01-30 19:40:43 |-INFO  31519 in org.springframework.jmx.export.annotation.AnnotationMBeanExporter[main] : Registering beans for JMX exposure on startup
+2018-01-30 19:40:43 |-INFO  31519 in org.springframework.context.support.DefaultLifecycleProcessor[main] : Starting beans in phase 2147483647
+2018-01-30 19:40:43 |-INFO  31519 in org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor[main] : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-01-30 19:40:43 |-INFO  31519 in org.apache.coyote.http11.Http11NioProtocol[main]   : Initializing ProtocolHandler ["http-nio-8098"]
+2018-01-30 19:40:43 |-INFO  31519 in org.apache.coyote.http11.Http11NioProtocol[main]   : Starting ProtocolHandler ["http-nio-8098"]
+2018-01-30 19:40:43 |-INFO  31519 in org.apache.tomcat.util.net.NioSelectorPool[main]   : Using a shared selector for servlet write/read
+2018-01-30 19:40:43 |-INFO  31519 in org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer[main] : Tomcat started on port(s): 8098 (http)
+2018-01-30 19:40:43 |-INFO  31519 in cn.hycen.Invoicing.InvoicingApplication[main]      : Started InvoicingApplication in 3.348 seconds (JVM running for 3.865)
+2018-01-30 19:40:49 |-INFO  31519 in org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][http-nio-8098-exec-1] : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-30 19:40:49 |-INFO  31519 in org.springframework.web.servlet.DispatcherServlet[http-nio-8098-exec-1] : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-30 19:40:49 |-INFO  31519 in org.springframework.web.servlet.DispatcherServlet[http-nio-8098-exec-1] : FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2018-01-30 19:40:49 |-INFO  31519 in org.thymeleaf.TemplateEngine[http-nio-8098-exec-1] : [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-01-30 19:40:49 |-INFO  31519 in org.thymeleaf.templateresolver.AbstractTemplateResolver[http-nio-8098-exec-1] : [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-01-30 19:40:49 |-INFO  31519 in org.thymeleaf.templateresolver.AbstractTemplateResolver[http-nio-8098-exec-1] : [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-01-30 19:40:49 |-INFO  31519 in org.thymeleaf.messageresolver.AbstractMessageResolver[http-nio-8098-exec-1] : [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-01-30 19:40:49 |-INFO  31519 in org.thymeleaf.messageresolver.AbstractMessageResolver[http-nio-8098-exec-1] : [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-01-30 19:40:49 |-INFO  31519 in org.thymeleaf.TemplateEngine.CONFIG[http-nio-8098-exec-1] : [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-01-30 19:40:49 |-INFO  31519 in org.thymeleaf.TemplateEngine[http-nio-8098-exec-1] : [THYMELEAF] TEMPLATE ENGINE INITIALIZED
