@@ -17,9 +17,9 @@ public class AdminPageController {
     /**
      * 跳转到登录页面
      */
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/**", method = RequestMethod.GET)
     public String Index() {
-        return "/login";
+        return "/admin/index";
     }
 
     /**
@@ -27,27 +27,27 @@ public class AdminPageController {
      */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String toLoginPage() {
-        return "/login";
+        return "/admin/login";
     }
 
     @RequestMapping(value = "/index",method = RequestMethod.GET)
     public String toIndex(){
-        return "index";
+        return "/admin/index";
     }
 
     @RequestMapping(value = "/main",method = RequestMethod.GET)
     public String toMain(){
-        return "main";
+        return "/admin/main";
     }
 
-    @RequestMapping(value = "/table",method = RequestMethod.GET)
-    public String toTable(){
-        return "table";
+    @RequestMapping(value = "/menuManage",method = RequestMethod.GET)
+    public String toMenuManage(){
+        return "/admin/menuManage";
     }
 
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     public String toTest(){
-        return "test";
+        return "/admin/test";
     }
 
 

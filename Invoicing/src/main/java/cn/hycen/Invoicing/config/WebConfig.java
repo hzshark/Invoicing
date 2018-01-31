@@ -87,7 +87,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Bean
     public InternalResourceViewResolver viewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/templates/");
+        viewResolver.setPrefix("/templates/admin/");
         viewResolver.setSuffix(".html");
         return viewResolver;
     }
